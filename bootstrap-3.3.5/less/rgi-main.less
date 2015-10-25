@@ -19,7 +19,8 @@ body {
   	top:100px;
   	padding:20px
 }
-
+.header-caption {color:white}
+.header-
 .news .col-lg-4 {
   margin-bottom: 20px;
 }
@@ -39,3 +40,15 @@ body {
 .topic,
 .news,
 .events {padding: @padding-large-vertical 0}
+
+// ghost button
+
+@btn-ghost-color:              @green-base;
+@btn-ghost-bg:                 transparent;
+@btn-ghost-border:             @green-base;
+
+.btn-ghost {
+  .button-variant(@btn-ghost-color; @btn-ghost-bg; @btn-ghost-border);
+  border-radius:@border-radius-base;
+  font-style:uppercase;
+}
