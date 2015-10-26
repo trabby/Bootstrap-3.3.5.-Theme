@@ -50,32 +50,32 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Lato", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
-@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@font-size-base:          16px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~20px
+@font-size-small:         ceil((@font-size-base * 0.88)); // ~14px
 
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
-@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
-@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h1:            floor((@font-size-base * 1.6)); // ~25px
+@font-size-h2:            floor((@font-size-base * 1.25)); // ~20px
+@font-size-h3:            ceil((@font-size-base * 1)); // ~16px
+@font-size-h4:            ceil((@font-size-base * 1)); // ~16px
 @font-size-h5:            @font-size-base;
-@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+@font-size-h6:            ceil((@font-size-base * 0.88)); // ~14px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+@line-height-base:        1.625; // 25/16 //1.428571429; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
 @headings-font-weight:    500;
-@headings-line-height:    1.1;
+@headings-line-height:    1.5;
 @headings-color:          inherit;
 
 
@@ -98,8 +98,8 @@
 @padding-base-vertical:     6px;
 @padding-base-horizontal:   12px;
 
-@padding-large-vertical:    10px;
-@padding-large-horizontal:  16px;
+@padding-large-vertical:    20px;
+@padding-large-horizontal:  26px;
 
 @padding-small-vertical:    5px;
 @padding-small-horizontal:  10px;
@@ -372,16 +372,16 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             @gray;
+@navbar-default-color:             @green-base;
 @navbar-default-bg:                #fff;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                @brand-primary;
+@navbar-default-link-color:                @green-base;
 @navbar-default-link-hover-color:          #333;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-color:         @gray;
+@navbar-default-link-active-bg:            transparent;
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
@@ -795,16 +795,16 @@
 //
 //##
 
-@breadcrumb-padding-vertical:   8px;
+@breadcrumb-padding-vertical:   4px;
 @breadcrumb-padding-horizontal: 15px;
 //** Breadcrumb background color
-@breadcrumb-bg:                 #f5f5f5;
+@breadcrumb-bg:                 #f4f5f7;
 //** Breadcrumb text color
-@breadcrumb-color:              #ccc;
+@breadcrumb-color:              @brand-primary;
 //** Text color of current page in the breadcrumb
 @breadcrumb-active-color:       @gray-light;
 //** Textual separator for between breadcrumb elements
-@breadcrumb-separator:          "/";
+@breadcrumb-separator:          ">";
 
 
 //== Carousel

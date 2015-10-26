@@ -30,24 +30,27 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
 
-        <div class="col-md-12">
+        <div class="col-md-12 site-action">
+            <ol class="list-unstyled nav-pills navbar-right">
+              <li><a href="#"alt="Linkedin" title=""><span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin-square fa-stack-1x fa-inverse"></i></span></a></li>
+              <li><a href="#"alt="YouTube" title=""><span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-youtube fa-stack-1x fa-inverse"></i></span></a></li>
+              <li><a href="#"alt="Flickr" title=""><span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-flickr fa-stack-1x fa-inverse"></i></span></a></li>
+              <li><a href="#" alt="Twitter" title=""><span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+              <li><a href="#" alt="Instagram" title=""><span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+            </ol>
            <ul class="nav navbar-nav navbar-right">
             <li><a href="../navbar/">Contact</a></li>
             <li><a href="../navbar-static-top/">Newsletter</a></li>
             <li class="active"><a href="./">Press</a></li>
           </ul>
 
-
-          
-            <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-            </ol>
-         
-
         </div> 
-        <div class="col-md-4">
+        <div class="col-md-2">
           <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -60,9 +63,9 @@
 
         </div><!-- End: col-md-4 -->
 
-        <div class="col-md-8">
+        <div class="col-md-9 col-md-offset-1">
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav nav-list">
             <li class="active"><a href="#">About</a></li>
             <li><a href="#about">Publications</a></li>
             <li><a href="#contact">Topics</a></li>
@@ -70,9 +73,12 @@
           </ul>
 
           <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="search" placeholder="Search" class="form-control">
-            </div>
+              <div class="input-group">
+                <input type="search" class="form-control" placeholder="SEARCH">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </span>
+              </div><!-- /input-group -->
           </form>
         </div><!--/.nav-collapse -->
         </div><!-- End: col-md-8 -->
@@ -80,21 +86,30 @@
     </nav>
 
    
+      <!-- Breadcrumbs
+    ================================================== -->
+    <div class="container">
+             <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Publications</li>
+            </ol>
+    </div>
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="header-visual">
 
           <!-- Wrapper for images -->
       <div class="header-block">
-        <div class="item">
-        <img class="header-image img-responsive" src="assets/img/header-rgi.png" title="" alt="">
+        <div class="header-banner">
+          <img class="" src="assets/img/header-rgi.png" alt="" title="">
         <div class="container">
+          
         <div class="header-text">
-          <h3 class="header-caption">
+          <h1 class="header-caption">
             RGI is a unique collaboration of environmental NGOs and transmission system operators from across Europe. We promote transparent, environmentally sensitive grid development to enable the further steady growth of renewable energy and the energy transition. 
-          </h3>         
+          </h1>         
         <p class="">
-          <a class="btn btn-lg btn-ghost" href="../../components/#navbar" role="button"><i class="fa fa-play-circle-o"></i>Play video</a>
+          <a class="btn-video btn-ghost" href="../../components/#navbar" role="button"><i class="fa fa-play-circle-o"></i>Play video</a>
         </p>
           </div>
         </div>
@@ -107,14 +122,16 @@
     ================================================== -->
     
       <section>
-        <div class="container">
+        <div class="container clearfix">
           <h1>Latest Event</h1>
             <div class="news">
             <div class="col-md-4">
                <img class="header-image img-responsive" src="assets/img/leitung-windrad.png" title="" alt="">
             </div>
             <div class="col-md-8">
-              <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+              <p class="font-14">Milan, 19 May 2014</p>
+              <h2>Grid Aesthetics</h2>
+              <p class="font-16">This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
               <p>To see the difference between static and fixed top navbars, just scroll.</p>
             </div>
             </div>
