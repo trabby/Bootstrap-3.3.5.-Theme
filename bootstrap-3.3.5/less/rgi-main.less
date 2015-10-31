@@ -9,7 +9,8 @@ body {
 h1,h2,h3,h4,h5,h6,p {letter-spacing:1.0px}
 .navbar-brand {
     float: left;
-	padding: 0;
+    padding-left:-10px !important;
+	  padding: 0;
     position: relative;
     top: -40px;
     }
@@ -26,6 +27,7 @@ h1,h2,h3,h4,h5,h6,p {letter-spacing:1.0px}
 .header-text  {
     position: relative;
     top: 180px;
+    padding:0 15px;
     }
 .header-caption {color:white,}
 
@@ -57,24 +59,26 @@ h1,h2,h3,h4,h5,h6,p {letter-spacing:1.0px}
     }
 ol.breadcrumb {margin-top:30px;margin-bottom:0px !important;}
 .navbar-form {padding-right:0;}
-.news .col-lg-4 {
-  margin-bottom: 20px;
-}
 
-.news .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
 // background colors
 .bg-gray {background:@gray-light}
 .bg-blue {background:@blue-lighter}
 
 .logos,
 .extras,
-.topic,
-.news,
-.events {padding: @padding-large-vertical 0}
+.topic {padding: @padding-large-vertical 0}
+// event, news
+.news, events {margin:0 15px;background:@bg-primary}
+.media, .media-text {padding-left:0}
 
+.news {float:left}
+.news .col-lg-4 {
+  margin-bottom: 20px;
+}
+.news .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
 // ghost button
 
 @btn-ghost-color:              @green-base;
@@ -85,10 +89,20 @@ ol.breadcrumb {margin-top:30px;margin-bottom:0px !important;}
   .button-variant(@btn-ghost-color; @btn-ghost-bg; @btn-ghost-border);
   border-radius:@border-radius-base;
   text-transform:uppercase;
+    &:hover,
+    &:focus {
+      color: @link-hover-color;
+      background-color: transparent;
+      border:1px solid @link-hover-color;
+    }
 }
+
 .btn-video {
   font-size:@font-size-small;
   color:white;
   font-weight: 300;
   i {font-size:36px;padding-right:@padding-small-horizontal;vertical-align: middle;font-weight:100;}
   }
+
+.read-more {text-transform:uppercase}
+.klick-more {text-decoration:underline; margin-right:20px}

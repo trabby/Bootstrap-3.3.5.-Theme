@@ -1374,12 +1374,12 @@ a.text-danger:focus {
   color: #843534;
 }
 .bg-primary {
-  color: #fff;
-  background-color: #354560;
+  color: #424244;
+  background-color: #f4f5f7;
 }
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #232d3f;
+  background-color: #d6dae2;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -2624,7 +2624,7 @@ input[type="search"] {
   .input-group-lg input[type="time"],
   .input-group-lg input[type="datetime-local"],
   .input-group-lg input[type="month"] {
-    line-height: 69px;
+    line-height: 59px;
   }
 }
 .form-group {
@@ -2741,39 +2741,39 @@ select[multiple].input-sm {
   line-height: 1.5;
 }
 .input-lg {
-  height: 69px;
-  padding: 20px 26px;
+  height: 59px;
+  padding: 15px 26px;
   font-size: 20px;
   line-height: 1.3333333;
   border-radius: 6px;
 }
 select.input-lg {
-  height: 69px;
-  line-height: 69px;
+  height: 59px;
+  line-height: 59px;
 }
 textarea.input-lg,
 select[multiple].input-lg {
   height: auto;
 }
 .form-group-lg .form-control {
-  height: 69px;
-  padding: 20px 26px;
+  height: 59px;
+  padding: 15px 26px;
   font-size: 20px;
   line-height: 1.3333333;
   border-radius: 6px;
 }
 .form-group-lg select.form-control {
-  height: 69px;
-  line-height: 69px;
+  height: 59px;
+  line-height: 59px;
 }
 .form-group-lg textarea.form-control,
 .form-group-lg select[multiple].form-control {
   height: auto;
 }
 .form-group-lg .form-control-static {
-  height: 69px;
+  height: 59px;
   min-height: 46px;
-  padding: 21px 26px;
+  padding: 16px 26px;
   font-size: 20px;
   line-height: 1.3333333;
 }
@@ -2798,9 +2798,9 @@ select[multiple].input-lg {
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 69px;
-  height: 69px;
-  line-height: 69px;
+  width: 59px;
+  height: 59px;
+  line-height: 59px;
 }
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
@@ -2989,7 +2989,7 @@ select[multiple].input-lg {
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 27.666666px;
+    padding-top: 20.9999995px;
     font-size: 20px;
   }
 }
@@ -3487,7 +3487,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 20px 26px;
+  padding: 15px 26px;
   font-size: 20px;
   line-height: 1.3333333;
   border-radius: 6px;
@@ -3885,8 +3885,8 @@ tbody.collapse.in {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 69px;
-  padding: 20px 26px;
+  height: 59px;
+  padding: 15px 26px;
   font-size: 20px;
   line-height: 1.3333333;
   border-radius: 6px;
@@ -3894,8 +3894,8 @@ tbody.collapse.in {
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 69px;
-  line-height: 69px;
+  height: 59px;
+  line-height: 59px;
 }
 textarea.input-group-lg > .form-control,
 textarea.input-group-lg > .input-group-addon,
@@ -3961,7 +3961,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 3px;
 }
 .input-group-addon.input-lg {
-  padding: 20px 26px;
+  padding: 15px 26px;
   font-size: 20px;
   border-radius: 6px;
 }
@@ -4823,7 +4823,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 20px 26px;
+  padding: 15px 26px;
   font-size: 20px;
   line-height: 1.3333333;
 }
@@ -6816,6 +6816,7 @@ p {
   top: -40px;
   float: left;
   padding: 0;
+  padding-left: -10px !important;
 }
 .header-visual {
   position: relative;
@@ -6830,6 +6831,7 @@ p {
 .header-text {
   position: relative;
   top: 180px;
+  padding: 0 15px;
 }
 .header-caption {
   color: white;
@@ -6874,13 +6876,6 @@ ol.breadcrumb {
 .navbar-form {
   padding-right: 0;
 }
-.news .col-lg-4 {
-  margin-bottom: 20px;
-}
-.news .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
 .bg-gray {
   background: #a3a2a8;
 }
@@ -6889,10 +6884,27 @@ ol.breadcrumb {
 }
 .logos,
 .extras,
-.topic,
+.topic {
+  padding: 15px 0;
+}
 .news,
-.events {
-  padding: 20px 0;
+events {
+  margin: 0 15px;
+  background: #f4f5f7;
+}
+.media,
+.media-text {
+  padding-left: 0;
+}
+.news {
+  float: left;
+}
+.news .col-lg-4 {
+  margin-bottom: 20px;
+}
+.news .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .btn-ghost {
   color: #74a80a;
@@ -6962,6 +6974,12 @@ fieldset[disabled] .btn-ghost.active {
   color: transparent;
   background-color: #74a80a;
 }
+.btn-ghost:hover,
+.btn-ghost:focus {
+  color: #1a222f;
+  background-color: transparent;
+  border: 1px solid #1a222f;
+}
 .btn-video {
   font-size: 15px;
   font-weight: 300;
@@ -6972,5 +6990,12 @@ fieldset[disabled] .btn-ghost.active {
   font-size: 36px;
   font-weight: 100;
   vertical-align: middle;
+}
+.read-more {
+  text-transform: uppercase;
+}
+.klick-more {
+  margin-right: 20px;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=bootstrap.css.map */
