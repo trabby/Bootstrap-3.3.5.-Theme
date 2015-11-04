@@ -185,6 +185,31 @@ ol.breadcrumb {margin-top:15px;margin-bottom:0px !important;}
     height:100%;
     text-shadow: 0 1px 2px rgba(230, 232, 227, .6);   
 }
+.css-transitions img {
+  transition: transform 0.45s, filter 0.45s;
+  -webkit-transition: -webkit-transform 0.45s, -webkit-filter 0.45s;
+  -moz-transition: -moz-transform 0.45s, -moz-filter 0.45s;
+  -o-transition: -o-transform 0.45s, -o-filter 0.45s;
+  -ms-transition: -ms-transform 0.45s, -ms-filter 0.45s;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* This forces hardware acceleration for more consistent transitions */
+}
+.css-transitions:hover img {
+  -webkit-transform: scale(0.90);
+  -moz-transform: scale(0.90);
+  -o-transform: scale(0.90);
+  -ms-transform: scale(0.90);
+}
+.css-transitions:hover img {
+  /* IE 5-7 */
+  filter: alpha(opacity=85);
+  /* Netscape */
+  -moz-opacity: 0.85;
+  /* Safari 1.x */
+  -khtml-opacity: 0.85;
+  /* Good browsers */
+  opacity: 0.85;
+}
 .pdf-thumb-box-overlay span {
   margin: auto;
   position: absolute;

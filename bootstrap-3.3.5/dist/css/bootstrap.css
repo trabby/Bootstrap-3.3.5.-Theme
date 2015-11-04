@@ -7246,6 +7246,31 @@ fieldset[disabled] .btn-full.active {
        -o-transition-delay: 0s;
           transition-delay: 0s;
 }
+.css-transitions img {
+  -webkit-transition: -webkit-transform .45s, -webkit-filter .45s;
+      -ms-transition:     -ms-transform .45s, -ms-filter .45s;
+       -o-transition:      -o-transform .45s, -o-filter .45s;
+          transition:         transform .45s, filter .45s;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* This forces hardware acceleration for more consistent transitions */
+}
+.css-transitions:hover img {
+  -webkit-transform: scale(.9);
+     -moz-transform: scale(.9);
+      -ms-transform: scale(.9);
+       -o-transform: scale(.9);
+}
+.css-transitions:hover img {
+  /* IE 5-7 */
+  filter: alpha(opacity=85);
+  /* Good browsers */
+         opacity: .85;
+  /* Netscape */
+
+    -moz-opacity: .85;
+  /* Safari 1.x */
+  -khtml-opacity: .85;
+}
 .pdf-thumb-box-overlay span {
   position: absolute;
   top: 0;
