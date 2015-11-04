@@ -4743,7 +4743,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 4px 15px;
   margin-bottom: 22px;
   list-style: none;
-  background-color: #f4f5f7;
+  background-color: transparent;
   border-radius: 0;
 }
 .breadcrumb > li {
@@ -6798,6 +6798,39 @@ button.close {
     display: none !important;
   }
 }
+.bg-primary {
+  float: left;
+  background: #f4f5f7;
+}
+.bg-primary-float {
+  background: #f4f5f7;
+}
+.bg-primary-float h2,
+.bg-primary-float p {
+  color: #424244;
+}
+.bg-blue {
+  background: #49628c;
+}
+.bg-blue h2,
+.bg-blue p {
+  color: white;
+}
+.bg-blue-dark {
+  background: #354560;
+}
+.bg-blue-dark h2,
+.bg-blue-dark p {
+  color: white;
+}
+.bg-blue-darker {
+  background: #313b4b;
+}
+.bg-blue-darker h2,
+.bg-blue-darker p,
+.bg-blue-darker a {
+  color: #74a80a;
+}
 body {
   min-height: 2000px;
   padding-top: 80px;
@@ -6819,8 +6852,26 @@ h1 {
   font-size: 15px;
   color: #a3a2a8;
 }
-section {
-  margin-top: 20px;
+h2.topic-text {
+  color: white;
+}
+.container-col {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.text-morelink,
+.text-block p {
+  padding: 5px 10px;
+}
+.text-morelink {
+  margin-bottom: 15px;
+}
+.sitemap,
+.margin-before {
+  margin-top: 52px;
+}
+.margin-after {
+  margin-bottom: 52px;
 }
 .navbar-brand {
   position: relative;
@@ -6842,9 +6893,9 @@ section {
 .header-text {
   position: relative;
   top: 180px;
-  padding: 0 15px;
 }
 .header-caption {
+  margin-left: 0;
   color: white;
 }
 .nav-list {
@@ -6891,54 +6942,19 @@ section {
   font-size: 15px !important;
   color: #74a80a;
 }
+#footer-actions .nav li a:hover {
+  background: transparent;
+}
 ol.breadcrumb {
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 0 !important;
 }
 .navbar-form {
   padding-right: 0;
 }
-.bg-primary {
-  float: left;
-  background: #f4f5f7;
-}
-.bg-topic {
-  background: #f4f5f7;
-}
-.bg-topic h2,
-.bg-topic p {
-  color: #424244;
-}
-.bg-blue {
-  background: #49628c;
-}
-.bg-blue h2,
-.bg-blue p {
-  color: white;
-}
-.bg-blue-dark {
-  background: #354560;
-}
-.bg-blue-dark h2,
-.bg-blue-dark p {
-  color: white;
-}
-.bg-blue-darker {
-  background: #313b4b;
-}
-.bg-blue-darker h2,
-.bg-blue-darker p,
-.bg-blue-darker a {
-  color: #74a80a;
-}
 .logos,
 .topic {
   padding: 15px 0;
-}
-.news {
-  float: left;
-  padding: 15px 0;
-  margin: 0 15px;
 }
 .media,
 .media-text {
@@ -6946,13 +6962,6 @@ ol.breadcrumb {
 }
 .media-text {
   padding-top: 10px;
-}
-.news .col-lg-4 {
-  margin-bottom: 20px;
-}
-.news .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
 }
 .btn-ghost {
   color: #74a80a;
@@ -7210,7 +7219,7 @@ fieldset[disabled] .btn-full.active {
 .pdf-thumb-box {
   position: relative !important;
   display: inline-block !important;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   overflow: hidden;
 }
 .pdf-thumb-box-overlay {

@@ -2,6 +2,25 @@
 // www.abstract-technology.de
 // st@abstract-technology.de
 
+// background colors
+.bg-primary {background:@bg-primary;float:left}
+.bg-primary-float {
+  background:@blue-white;
+    h2, p {color:@gray-base}
+  }
+.bg-blue {
+  background:@blue-lighter;
+    h2, p {color:white}
+  }
+.bg-blue-dark {
+  background:@blue;
+    h2, p {color:white}
+  }
+.bg-blue-darker {
+  background:@blue-darker;
+    h2, p, a {color:@green-base}
+  }
+
 body {
   min-height: 2000px;
   padding-top: 80px;
@@ -9,8 +28,13 @@ body {
 h1,h2,h3,h4,h5,h6,p {letter-spacing:1.0px}
 h1 {margin-left: 40px;}
 .font-14 {font-size:@font-size-small; color:@gray-light; padding-top:@padding-small-horizontal}
-section {margin-top:20px;}
-
+h2.topic-text {color:white}
+.container-col {padding-left:0 !important;padding-right:0 !important}
+.text-morelink,
+.text-block p {padding:@padding-small-vertical @padding-small-horizontal}
+.text-morelink {margin-bottom:15px}
+.sitemap,.margin-before {margin-top:@margin-large-vertical}
+.margin-after {margin-bottom:@margin-large-vertical;}
 .navbar-brand {
     float: left;
     padding-left:-10px !important;
@@ -31,9 +55,8 @@ section {margin-top:20px;}
 .header-text  {
     position: relative;
     top: 180px;
-    padding:0 15px;
     }
-.header-caption {color:white,}
+.header-caption {color:white; margin-left:0;}
 
 //    Navigation top and navigation footer
 .nav-list {
@@ -65,42 +88,19 @@ section {margin-top:20px;}
 #footer-actions .nav-list li + li:before {color: @green-base;}
 #footer-actions .nav-list li, 
 #footer-actions .nav-list li a {color: @green-base;font-size:@font-size-small !important;}
+#footer-actions .nav li a:hover {background:transparent}
 
-ol.breadcrumb {margin-top:30px;margin-bottom:0px !important;}
+ol.breadcrumb {margin-top:15px;margin-bottom:0px !important;}
 .navbar-form {padding-right:0;}
 
-// background colors
-.bg-primary {background:@bg-primary;float:left}
-.bg-topic {
-  background:@blue-white;
-    h2, p {color:@gray-base}
-  }
-.bg-blue {
-  background:@blue-lighter;
-    h2, p {color:white}
-  }
-.bg-blue-dark {
-  background:@blue;
-    h2, p {color:white}
-  }
-.bg-blue-darker {
-  background:@blue-darker;
-    h2, p, a {color:@green-base}
-  }
+
 .logos,
 .topic {padding: @padding-large-vertical 0;}
 // event, news
-.news {margin:0 15px;padding:15px 0; float:left}
+
 .media, .media-text {padding-left:0}
 .media-text {padding-top:10px}
 
-.news .col-lg-4 {
-  margin-bottom: 20px;
-}
-.news .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
 // ghost button
 
 @btn-ghost-color:              @green-base;
@@ -163,7 +163,7 @@ ol.breadcrumb {margin-top:30px;margin-bottom:0px !important;}
   display:inline-block !important;
   position:relative !important; 
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .pdf-thumb-box-overlay { 
   visibility:hidden;
