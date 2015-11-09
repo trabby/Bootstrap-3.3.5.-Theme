@@ -3,7 +3,7 @@
 // st@abstract-technology.de
 
 // background colors
-.bg-primary {background:@bg-primary;float:left}
+.bg-primary {background:@bg-primary;float:left;}
 .bg-primary-float {
   background:@blue-white;
     h2, p {color:@gray-base}
@@ -37,8 +37,6 @@ h2.topic-text {color:white}
 .margin-after {margin-bottom:@margin-large-vertical;}
 .navbar-brand {
     float: left;
-    padding-left:-10px !important;
-	  padding: 0;
     position: relative;
     top: -40px;
     }
@@ -98,7 +96,13 @@ ol.breadcrumb {margin-top:15px;margin-bottom:0px !important;}
 .topic {padding: @padding-large-vertical 0;}
 // event, news
 
-.media, .media-text {padding-left:0}
+.media {
+  background: @bg-primary;
+  margin-left: 15px;
+  .col-md-4 {padding-left:0px}
+}
+
+.media-text {padding-left:0}
 .media-text {padding-top:10px}
 
 // ghost button

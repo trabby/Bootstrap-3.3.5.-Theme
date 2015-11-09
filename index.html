@@ -29,7 +29,7 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-
+        <div class="row">
         <div class="col-md-12 site-action">
             <ol class="list-unstyled nav-pills navbar-right">
               <li><a href="#"alt="Linkedin" title=""><span class="fa-stack fa-lg">
@@ -82,54 +82,82 @@
           </form>
         </div><!--/.nav-collapse -->
         </div><!-- End: col-md-8 -->
-      </div><!-- End: container 1 -->
+         </div><!-- End: row -->
+      </div><!-- End: container -->
     </nav>
 
    
       <!-- Breadcrumbs
     ================================================== -->
+    <div class="bg-primary-float">
     <div class="container">
+        <div class="row">
              <ol class="breadcrumb">
               <li><a href="#">Home</a></li>
               <li class="active">Publications</li>
             </ol>
-    </div>
-
+        </div><!-- End: row -->
+    </div><!-- End: container -->
+  </div><!-- bg-color -->
       <!-- Main component for a primary marketing message or call to action -->
       <div class="header-visual" id="top">
 
           <!-- Wrapper for images -->
-      <div class="header-block">
+     
         <div class="header-banner">
           <img class="" src="assets/img/header-rgi.png" alt="" title="">
         <div class="container">
-          
+        
         <div class="header-text">
+          <div class="row">
           <h1 class="header-caption">
             RGI is a unique collaboration of environmental NGOs and transmission system operators from across Europe. We promote transparent, environmentally sensitive grid development to enable the further steady growth of renewable energy and the energy transition. 
           </h1>         
         <p class="">
           <a class="btn-video btn-ghost" href="../../components/#navbar" role="button"><i class="fa fa-play-circle-o"></i>Play video</a>
         </p>
+           </div><!-- End: row -->
           </div>
-        </div>
-      </div>
-
-      </div> <!-- /carousel-inner -->
-      </div> <!-- /header-image -->
+       
+        </div><!-- End: container -->
+      </div> <!-- /header-banner -->
+      </div> <!-- /header-visual -->
 
       <!-- News
     ================================================== -->
     
-      <section>
-        <div class="container clearfix">
+    <div class="container clearfix">
+      <div class="margin-before">
+        <div class="row">
           <h1>Latest Event</h1>
-          
-            <div class="news">
-            <div class="bg-primary">
-            <div class="col-md-4 media">
+
+          <div class="media">
+            <div class="col-md-4">
+              <div class="">
+                <a href="#">
+                  <img class="media-object img-responsive" src="assets/img/leitung-windrad.png" title="" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="">
+                <!--h4 class="media-heading">Media heading</h4-->
+                <p class="font-14">Milan, 19 May 2014</p>
+                <h2>Grid Aesthetics</h2>
+                <p class="font-16">This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+                <div>
+                  <p class="pull-right">
+                    <a class="klick-more" href="" role="button">All Events</a>
+                    <a class="btn btn-ghost read-more" href="" role="button">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+           
+            <!--div class="col-md-4 media">
                <img class="header-image img-responsive" src="assets/img/leitung-windrad.png" title="" alt="">
             </div>
+             <div class="" style="background:red;">
             <div class="col-md-8 media-text">
               <p class="font-14">Milan, 19 May 2014</p>
               <h2>Grid Aesthetics</h2>
@@ -142,24 +170,26 @@
               </div>
             </div>
 
-            </div><!-- div bg-primary -->
-          </div><!-- div news -->
-        </div><!-- div container -->
-      </section>
+            </div--><!-- div bg-primary -->
+          </div><!-- div media -->
+          </div><!-- row -->
+          </div><!-- margin-before -->
 
     <!-- Events
     ================================================== -->
-    <section>
-    <div class="container">
-      <h1>Latest News</h1>
+ 
+      <div class="margin-before margin-after">
+      <div class="row">
+        <h1>Latest News</h1>
       <!-- Three columns of text below the carousel -->
-        <div class="col-lg-4">
-          <div class="bg-primary">
+        <div class="col-sm-4 col-xs-12">
+          <div class="css-transitions">
           <img class="img-responsive" src="assets/img/leitung-windrad.png" title="" alt="">
-          <div class="news">
+          <div class="bg-primary">
+          <div class="text-block">
           <p class="font-14">Milan, 19 May 2014</p>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-             <div class="">
+             <div class="text-morelink">
                 <span class="text-left">
                   <a class="klick-more" href="" role="button">All News</a>
                 </span>
@@ -167,33 +197,18 @@
                   <a class="btn btn-ghost read-more" href="" role="button">Read More</a>
                 </span>
               </div><!-- padding-10 -->
-            </div><!-- div news -->
-            </div><!-- div bg-primary -->
+            </div><!-- div text-block -->
+            </div><!-- div bg-primary-->
+            </div><!-- css-transitions-->
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <div class="bg-primary">
-          <img class="img-responsive" src="assets/img/leitung.png" title="" alt="">
-          <div class="news">
-          <p class="font-14">Milan, 19 May 2014</p>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-             <div class="">
-                <span class="text-left">
-                  <a class="klick-more" href="" role="button">All News</a>
-                </span>
-                <span class="pull-right">
-                  <a class="btn btn-ghost read-more" href="" role="button">Read More</a>
-                </span>
-              </div><!-- padding-10 -->
-            </div><!-- div news -->
-            </div><!-- div bg-primary -->
-        </div><!-- /.col-lg-4 -->        
-        <div class="col-lg-4">
-          <div class="bg-primary">
+        <div class="col-sm-4 col-xs-12">
+          <div class="css-transitions">
           <img class="img-responsive" src="assets/img/leitung-windrad.png" title="" alt="">
-          <div class="news">
+          <div class="bg-primary">
+          <div class="text-block">
           <p class="font-14">Milan, 19 May 2014</p>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-             <div class="">
+             <div class="text-morelink">
                 <span class="text-left">
                   <a class="klick-more" href="" role="button">All News</a>
                 </span>
@@ -201,21 +216,42 @@
                   <a class="btn btn-ghost read-more" href="" role="button">Read More</a>
                 </span>
               </div><!-- padding-10 -->
-            </div><!-- div news -->
-            </div><!-- div bg-primary -->
+            </div><!-- div text-block -->
+            </div><!-- div bg-primary-->
+            </div><!-- css-transitions-->
         </div><!-- /.col-lg-4 -->
-    </div>
-  </section>
+        <div class="col-sm-4 col-xs-12">
+          <div class="css-transitions">
+          <img class="img-responsive" src="assets/img/leitung-windrad.png" title="" alt="">
+          <div class="bg-primary">
+          <div class="text-block">
+          <p class="font-14">Milan, 19 May 2014</p>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+             <div class="text-morelink">
+                <span class="text-left">
+                  <a class="klick-more" href="" role="button">All News</a>
+                </span>
+                <span class="pull-right">
+                  <a class="btn btn-ghost read-more" href="" role="button">Read More</a>
+                </span>
+              </div><!-- padding-10 -->
+            </div><!-- div text-block -->
+            </div><!-- div bg-primary-->
+            </div><!-- css-transitions-->
+        </div><!-- /.col-lg-4 -->
+      </div><!-- div row -->
+      </div><!-- margin-after -->
+    </div><!-- div container -->
+ 
     <!-- Topic
     ================================================== -->
-    
-      <section>
-         <div class="bg-topic">
+            <div class="bg-primary-float">
 
               <div class="container">
-                <h1>Topics</h1>
-                <div class="topic">
-                  <div class="col-lg-6">
+                <div class="margin-after">
+                <div class="row">
+                  <h1>Topics</h1>
+                  <div class="col-lg-6 col-md-4 col-sm-12">
                     <div class="pdf-thumb-box"> 
                       <a href="#">
                       <div class="pdf-thumb-box-overlay"><span class="fa-stack fa-lg">
@@ -227,7 +263,7 @@
                     </a>
                   </div><!-- /.pdf-thumb-box -->
                 </div><!-- /.col-lg-6 -->
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-4 col-sm-12">
                     <div class="pdf-thumb-box"> 
                       <a href="#">
                       <div class="pdf-thumb-box-overlay"><span class="fa-stack fa-lg">
@@ -239,7 +275,7 @@
                     </a>
                   </div><!-- /.pdf-thumb-box -->
                 </div><!-- /.col-lg-6 -->
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-4 col-sm-12">
                     <div class="pdf-thumb-box"> 
                       <a href="#">
                       <div class="pdf-thumb-box-overlay"><span class="fa-stack fa-lg">
@@ -252,7 +288,7 @@
                   </div><!-- /.pdf-thumb-box -->
                 </div><!-- /.col-lg-6 -->
 
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-4 col-sm-12">
                     <div class="pdf-thumb-box"> 
                       <a href="#">
                       <div class="pdf-thumb-box-overlay"><span class="fa-stack fa-lg">
@@ -265,7 +301,7 @@
                   </div><!-- /.pdf-thumb-box -->
                 </div><!-- /.col-lg-6 -->
 
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-4 col-sm-12">
                     <div class="pdf-thumb-box"> 
                       <a href="#">
                       <div class="pdf-thumb-box-overlay"><span class="fa-stack fa-lg">
@@ -279,7 +315,7 @@
                 </div><!-- /.col-lg-6 -->
 
 
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-4 col-sm-12">
                     <div class="pdf-thumb-box"> 
                       <a href="#">
                       <div class="pdf-thumb-box-overlay"><span class="fa-stack fa-lg">
@@ -292,17 +328,18 @@
                   </div><!-- /.pdf-thumb-box -->
                 </div><!-- /.col-lg-6 -->                
                 
-              </div>
+              </div><!-- div row -->
               <div class=""><p class="text-center"><a class="btn btn-ghost read-more" href="#" role="button">All topics</a></p></div>
-              </div>
-         </div>
-      </section>
+              </div><!-- margin-after -->
+              </div><!-- div container -->
+         </div><!-- /bg-color -->
+  
 
     <!-- Extras and Twitter
     ================================================== -->
-    <section>
     <div class="container">
-
+      <div class="margin-before">
+      <div class="row">
         <div class="col-lg-4">
         <div class="bg-blue adv clearfix">
           <h2>Bestgrid</h2>
@@ -316,7 +353,7 @@
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
-        <div class="bg-topic adv clearfix">
+        <div class="bg-primary-float adv clearfix">
           <h2>European Grid Conference</h2>
           <img class="img-responsive" src="assets/img/EGC-Logo.png" title="" alt="">
           
@@ -335,14 +372,16 @@
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
     </div><!-- /.col-lg-4 -->
-
+  </div><!-- /.row -->
+  </div><!-- margin-before margin-after -->
     </div><!-- /.container -->
-    </section>
+
     <!-- Newsletter
     ================================================== -->
-    <section>
-    <div class="container">
 
+    <div class="container">
+       <div class="margin-before">
+      <div class="row">
       <!-- Three columns of text below the carousel -->
       <div class="events">
             <div class="col-lg-12">
@@ -350,13 +389,18 @@
           <a class="btn btn-lg btn-full read-more" href="" role="button">Subscribe to our newsletter</a>
         </p>
            </div><!-- /.col-lg-12 -->
-      </div><!-- /.evet -->
-    </div>
-    </section>
+      </div><!-- /.events -->
+    </div><!-- margin-before -->
+    </div><!-- /.row -->
+     </div><!-- /.container -->
+
+
       <!-- Logos
     ================================================== -->
-      <section>
+
          <div class="container">
+            <div class="margin-before">
+            <div class="row">
             <div class="logos">
 
               <div class="container">
@@ -397,13 +441,15 @@
               </div>
 
             </div>
+             </div><!-- /.row -->
+             </div><!-- margin-before -->
           </div><!-- /.container -->
-      </section>
+
       <!-- Sitemap
     ================================================== -->
-      <section>
          <div class="bg-blue-dark">
             <div class="container">
+              <div class="row">
               <div class="sitemap">
               <nav class="nav-footer">
               <ul id="menu-main-navigation" class="menu">
@@ -440,14 +486,15 @@
               </ul>
             </nav>
             </div>
-            </div>
-          </div>
-      </section>
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+          </div><!-- /bg-color -->
       <!-- Footer
     ================================================== -->
       <footer>
         <div class="bg-blue-darker">
         <div class="container">
+          <div class="row">
           <div id="footer-actions">
           <ul class="nav navbar-nav nav-list">
             <li>&copy; 2015 Renewables Grid Initiative</li>
@@ -470,9 +517,9 @@
           <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
             </ol>
           </div><!-- /.footer-actions -->
-        </div>
-        </div><!-- /.container -->
-        </div>
+          </div><!-- /.row -->
+         </div><!-- /.container -->
+       </div><!-- /bg-color -->
       </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->

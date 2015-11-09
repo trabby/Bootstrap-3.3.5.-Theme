@@ -6877,8 +6877,6 @@ h2.topic-text {
   position: relative;
   top: -40px;
   float: left;
-  padding: 0;
-  padding-left: -10px !important;
 }
 .header-visual {
   position: relative;
@@ -6956,12 +6954,21 @@ ol.breadcrumb {
 .topic {
   padding: 15px 0;
 }
-.media,
+.media {
+  margin-left: 15px;
+  background: #f4f5f7;
+}
+.media .col-md-4 {
+  padding-left: 0;
+}
 .media-text {
   padding-left: 0;
 }
 .media-text {
   padding-top: 10px;
+}
+.media-body {
+  display: inherit;
 }
 .btn-ghost {
   color: #74a80a;
