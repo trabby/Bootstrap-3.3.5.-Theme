@@ -6915,7 +6915,6 @@ h2.topic-text {
 }
 .nav-list > .active {
   color: #5b595e;
-  text-decoration: underline;
 }
 .site-action .nav li > a {
   font-size: 15px !important;
@@ -6966,9 +6965,6 @@ ol.breadcrumb {
 }
 .media-text {
   padding-top: 10px;
-}
-.media-body {
-  display: inherit;
 }
 .btn-ghost {
   color: #74a80a;
