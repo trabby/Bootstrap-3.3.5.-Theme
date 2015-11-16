@@ -9,7 +9,7 @@
 @green-lighter:		#AFD577;
 @yellow-lighter:	#E6E8E3;
 
-@blue-darker:		#313b4b;
+@blue-darker:		#313b4b; // RGB: 49,59,75
 @blue:				#354560;
 @blue-lighter:		#49628C;
 @blue-white:		#F4F5F7;
@@ -499,12 +499,12 @@
 //
 //##
 
-@jumbotron-padding:              30px;
-@jumbotron-color:                inherit;
-@jumbotron-bg:                   @gray-lighter;
-@jumbotron-heading-color:        inherit;
-@jumbotron-font-size:            ceil((@font-size-base * 1.5));
-@jumbotron-heading-font-size:    ceil((@font-size-base * 4.5));
+@jumbotron-padding:              0px;
+@jumbotron-color:                white;
+@jumbotron-bg:                   @blue;
+@jumbotron-heading-color:        white;
+@jumbotron-font-size:            @font-size-base;
+@jumbotron-heading-font-size:    ceil((@font-size-base * 3.8));
 
 
 //== Form states and alerts
@@ -775,8 +775,8 @@
 //
 //##
 
-@well-bg:                     #f5f5f5;
-@well-border:                 darken(@well-bg, 7%);
+@well-bg:                     @blue-white;
+@well-border:                 @blue-white;
 
 
 //== Badges

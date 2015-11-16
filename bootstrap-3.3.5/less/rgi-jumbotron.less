@@ -1,0 +1,52 @@
+
+
+.jumbotron {
+  padding-top:    @jumbotron-padding;
+  padding-bottom: @jumbotron-padding;
+  margin-bottom: @jumbotron-padding;
+  color: @jumbotron-color;
+  background-color: @jumbotron-bg;
+  text-align:center;
+  min-height:158px;
+
+  &:hover {
+    transition-delay:0s;
+    background-color: @blue-darker;
+  }
+  h1,
+  .h1 {
+    color: @jumbotron-heading-color;
+    margin:0;
+  }
+
+  p {
+    margin-bottom: (@jumbotron-padding / 2);
+    font-size: @jumbotron-font-size;
+    font-weight: 200;
+    color: @jumbotron-color;
+  }
+  a {color: @jumbotron-color;
+    &:hover {
+      text-decoration:none;
+      }
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: @screen-sm-min) {
+    padding-top:    (@jumbotron-padding * 1.6);
+    padding-bottom: (@jumbotron-padding * 1.6);
+
+    .container &,
+    .container-fluid & {
+      padding-left:  (@jumbotron-padding * 2);
+      padding-right: (@jumbotron-padding * 2);
+    }
+
+    h1,
+    .h1 {
+      font-size: @jumbotron-heading-font-size;
+    }
+  }
+}

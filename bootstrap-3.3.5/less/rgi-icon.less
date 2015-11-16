@@ -1,1 +1,70 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,300,100);
+
+// ghost button
+
+@btn-ghost-color:           @green-base;
+@btn-ghost-bg:              transparent;
+@btn-ghost-border:          @green-base;
+@btn-ghost-white-color:     @gray-lighter;
+@btn-ghost-white-border:    @gray-lighter;
+@btn-full-color:            @gray-lighter;
+@btn-full-bg:               @green-base;
+@btn-full-border:           @green-base;
+@btn-gray-bg:				@gray-lighter;
+@btn-gray-color:            #ccc;
+@btn-gray-border:           #ccc;
+
+.btn-gray {
+  .button-variant(@btn-gray-color; @btn-gray-bg; @btn-gray-border);
+  border-radius:@border-radius-base;
+  text-transform:uppercase;
+    &:hover,
+    &:focus {
+      color: @link-hover-color;
+    }
+}
+.btn-ghost {
+  .button-variant(@btn-ghost-color; @btn-ghost-bg; @btn-ghost-border);
+  border-radius:@border-radius-base;
+  text-transform:uppercase;
+  margin:10px 0px;
+    &:hover,
+    &:focus {
+      color: @link-hover-color;
+      background-color: transparent;
+      border:1px solid @link-hover-color;
+    }
+
+}
+.btn-ghost-white {
+  .button-variant(@btn-ghost-white-color; @btn-ghost-bg; @btn-ghost-white-border);
+  border-radius:@border-radius-base;
+  text-transform:uppercase;
+    &:hover,
+    &:focus {
+      color: @link-hover-color;
+      background-color: transparent;
+      border:1px solid @link-hover-color;
+    }
+}
+.btn-full {
+  .button-variant(@btn-full-color; @btn-full-bg; @btn-full-border);
+  border-radius:@border-radius-base;
+  text-transform:uppercase;
+  margin:10px 0px;
+    &:hover,
+    &:focus {
+      color: @link-hover-color;
+      background-color: transparent;
+      border:1px solid @link-hover-color;
+    }
+}
+.btn-video {
+  font-size:@font-size-small;
+  color:white;
+  font-weight: 300;
+  i {font-size:36px;padding-right:@padding-small-horizontal;vertical-align: middle;font-weight:100;}
+  }
+
+.read-more {text-transform:uppercase;padding:6px 32px;}
+.klick-more {text-decoration:underline; margin-right:20px; vertical-align: sub;}
