@@ -5041,6 +5041,100 @@ a.badge:focus {
     font-size: 61px;
   }
 }
+.jumbotron-file {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #74a80a;
+  min-height: 158px;
+}
+.jumbotron-file:hover {
+  transition-delay: 0s;
+  background-color: #7cbd00;
+}
+.jumbotron-file h2,
+.jumbotron-file .h2 {
+  color: white;
+  margin: 0;
+}
+.jumbotron-file p {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+}
+.jumbotron-file a {
+  color: white;
+}
+.jumbotron-file a:hover {
+  text-decoration: none;
+}
+.jumbotron-file .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron-file {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .container .jumbotron-file,
+  .container-fluid .jumbotron-file {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .jumbotron-file h2,
+  .jumbotron-file .h2 {
+    font-size: 20px;
+  }
+}
+.jumbotron-file-blue {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #354560;
+  min-height: 158px;
+}
+.jumbotron-file-blue:hover {
+  transition-delay: 0s;
+  background-color: #313b4b;
+}
+.jumbotron-file-blue h2,
+.jumbotron-file-blue .h2 {
+  color: white;
+  margin: 0;
+}
+.jumbotron-file-blue p {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+}
+.jumbotron-file-blue a {
+  color: white;
+}
+.jumbotron-file-blue a:hover {
+  text-decoration: none;
+}
+.jumbotron-file-blue .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron-file-blue {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .container .jumbotron-file-blue,
+  .container-fluid .jumbotron-file-blue {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .jumbotron-file-blue h2,
+  .jumbotron-file-blue .h2 {
+    font-size: 20px;
+  }
+}
 .thumbnail {
   display: block;
   padding: 4px;
@@ -7432,6 +7526,7 @@ ul.nav-tabs li.active:after {
 .carousel-control .glyphicon-chevron-right {
   color: #74a80a;
 }
+.embed-responsive-item,
 .img-object {
   padding-right: 20px;
 }

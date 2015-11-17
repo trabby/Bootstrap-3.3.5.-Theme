@@ -1,3 +1,26 @@
+//== Jumbotron
+//
+//##
+
+//== Jumbotron Data
+@jumbotron-padding:              0px;
+@jumbotron-color:                white;
+@jumbotron-bg:                   @blue;
+@jumbotron-heading-color:        white;
+@jumbotron-font-size:            @font-size-base;
+@jumbotron-heading-font-size:    ceil((@font-size-base * 3.8));
+
+//== Jumbotron file default
+@jumbotron-file-padding:              10px;
+@jumbotron-file-color:                white;
+@jumbotron-file-heading-color:        white;
+@jumbotron-file-font-size:            @font-size-small;
+@jumbotron-file-heading-font-size:    @font-size-h2;
+@jumbotron-file-bg-green:             @green-base;
+
+//== Jumbotron file blue
+@jumbotron-file-bg-blue:              @blue;
+
 
 
 .jumbotron {
@@ -47,6 +70,106 @@
     h1,
     .h1 {
       font-size: @jumbotron-heading-font-size;
+    }
+  }
+}
+
+.jumbotron-file {
+  padding-top:    @jumbotron-file-padding;
+  padding-bottom: @jumbotron-file-padding;
+  margin-bottom: @jumbotron-file-padding;
+  color: @jumbotron-file-color;
+  background-color: @jumbotron-file-bg-green;
+  min-height:158px;
+
+  &:hover {
+    transition-delay:0s;
+    background-color: @green-light;
+  }
+  h2,
+  .h2 {
+    color: @jumbotron-file-heading-color;
+    margin:0;
+  }
+
+  p {
+    margin-bottom: (@jumbotron-file-padding / 2);
+    font-size: @jumbotron-file-font-size;
+    font-weight: 200;
+    color: @jumbotron-file-color;
+  }
+  a {color: @jumbotron-file-color;
+    &:hover {
+      text-decoration:none;
+      }
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: @screen-sm-min) {
+    padding-top:    (@jumbotron-file-padding * 1.6);
+    padding-bottom: (@jumbotron-file-padding * 1.6);
+
+    .container &,
+    .container-fluid & {
+      padding-left:  (@jumbotron-file-padding * 2);
+      padding-right: (@jumbotron-file-padding * 2);
+    }
+
+    h2,
+    .h2 {
+      font-size: @jumbotron-file-heading-font-size;
+    }
+  }
+}
+
+.jumbotron-file-blue {
+  padding-top:    @jumbotron-file-padding;
+  padding-bottom: @jumbotron-file-padding;
+  margin-bottom: @jumbotron-file-padding;
+  color: @jumbotron-file-color;
+  background-color: @jumbotron-file-bg-blue;
+  min-height:158px;
+
+  &:hover {
+    transition-delay:0s;
+    background-color: @blue-darker;
+  }
+  h2,
+  .h2 {
+    color: @jumbotron-file-heading-color;
+    margin:0;
+  }
+
+  p {
+    margin-bottom: (@jumbotron-file-padding / 2);
+    font-size: @jumbotron-file-font-size;
+    font-weight: 200;
+    color: @jumbotron-file-color;
+  }
+  a {color: @jumbotron-file-color;
+    &:hover {
+      text-decoration:none;
+      }
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: @screen-sm-min) {
+    padding-top:    (@jumbotron-file-padding * 1.6);
+    padding-bottom: (@jumbotron-file-padding * 1.6);
+
+    .container &,
+    .container-fluid & {
+      padding-left:  (@jumbotron-file-padding * 2);
+      padding-right: (@jumbotron-file-padding * 2);
+    }
+
+    h2,
+    .h2 {
+      font-size: @jumbotron-file-heading-font-size;
     }
   }
 }
