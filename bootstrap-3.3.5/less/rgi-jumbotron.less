@@ -21,7 +21,10 @@
 //== Jumbotron file blue
 @jumbotron-file-bg-blue:              @blue;
 
-
+//== Jumbotron file gray light
+@jumbotron-file-bg-gray:              @gray-lighter;
+@jumbotron-file-gray-color:                @gray-base;
+@jumbotron-file-gray-heading-color:        @gray-base;
 
 .jumbotron {
   padding-top:    @jumbotron-padding;
@@ -73,9 +76,10 @@
     }
   }
 }
+ // GREEN
 
 .jumbotron-file {
-  padding-top:    @jumbotron-file-padding;
+  padding-top:    0;
   padding-bottom: @jumbotron-file-padding;
   margin-bottom: @jumbotron-file-padding;
   color: @jumbotron-file-color;
@@ -97,6 +101,7 @@
     font-size: @jumbotron-file-font-size;
     font-weight: 200;
     color: @jumbotron-file-color;
+    word-wrap: break-word;
   }
   a {color: @jumbotron-file-color;
     &:hover {
@@ -108,8 +113,8 @@
   }
 
   @media screen and (min-width: @screen-sm-min) {
-    padding-top:    (@jumbotron-file-padding * 1.6);
-    padding-bottom: (@jumbotron-file-padding * 1.6);
+    //padding-top:    (@jumbotron-file-padding * 1.6);
+    //padding-bottom: (@jumbotron-file-padding * 1.6);
 
     .container &,
     .container-fluid & {
@@ -123,9 +128,10 @@
     }
   }
 }
+// BLUE
 
 .jumbotron-file-blue {
-  padding-top:    @jumbotron-file-padding;
+  padding-top:    0;
   padding-bottom: @jumbotron-file-padding;
   margin-bottom: @jumbotron-file-padding;
   color: @jumbotron-file-color;
@@ -147,6 +153,8 @@
     font-size: @jumbotron-file-font-size;
     font-weight: 200;
     color: @jumbotron-file-color;
+    word-wrap: break-word;
+    vertical-align:baseline;
   }
   a {color: @jumbotron-file-color;
     &:hover {
@@ -158,8 +166,60 @@
   }
 
   @media screen and (min-width: @screen-sm-min) {
-    padding-top:    (@jumbotron-file-padding * 1.6);
-    padding-bottom: (@jumbotron-file-padding * 1.6);
+    //padding-top:    (@jumbotron-file-padding * 1.6);
+    //padding-bottom: (@jumbotron-file-padding * 1.6);
+
+    .container &,
+    .container-fluid & {
+      padding-left:  (@jumbotron-file-padding * 2);
+      padding-right: (@jumbotron-file-padding * 2);
+    }
+
+    h2,
+    .h2 {
+      font-size: @jumbotron-file-heading-font-size;
+    }
+  }
+}
+
+// GRAY LIGHT
+.jumbotron-file-gray {
+  padding-top:    @jumbotron-file-padding;
+  padding-bottom: @jumbotron-file-padding;
+  margin-bottom: @jumbotron-file-padding;
+  color: @jumbotron-file-gray-color;
+  background-color: @jumbotron-file-bg-gray;
+  min-height:158px;
+
+  &:hover {
+    transition-delay:2s;
+    background-color: @gray-light;
+  }
+  h2,
+  .h2 {
+    color: @jumbotron-file-gray-heading-color;
+    margin:0;
+  }
+  a > img {text-align:left !important;vertical-align:baseline;}
+  p {
+    margin-bottom: (@jumbotron-file-padding / 2);
+    font-size: @jumbotron-file-font-size;
+    font-weight: 200;
+    color: @jumbotron-file-gray-color;
+    word-wrap: break-word;
+  }
+  a {color: @jumbotron-file-gray-color;
+    &:hover {
+      text-decoration:none;
+      }
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: @screen-sm-min) {
+    //padding-top:    (@jumbotron-file-padding * 1.6);
+    //padding-bottom: (@jumbotron-file-padding * 1.6);
 
     .container &,
     .container-fluid & {

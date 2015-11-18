@@ -1280,6 +1280,9 @@ h6,
 p {
   margin: 0 0 11px;
 }
+.page-header p > a {
+  color: #74a80a;
+}
 .lead {
   margin-bottom: 22px;
   font-size: 18px;
@@ -5042,7 +5045,7 @@ a.badge:focus {
   }
 }
 .jumbotron-file {
-  padding-top: 10px;
+  padding-top: 0;
   padding-bottom: 10px;
   margin-bottom: 10px;
   color: white;
@@ -5063,6 +5066,7 @@ a.badge:focus {
   font-size: 15px;
   font-weight: 200;
   color: white;
+  word-wrap: break-word;
 }
 .jumbotron-file a {
   color: white;
@@ -5074,10 +5078,6 @@ a.badge:focus {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .jumbotron-file {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
   .container .jumbotron-file,
   .container-fluid .jumbotron-file {
     padding-left: 20px;
@@ -5089,7 +5089,7 @@ a.badge:focus {
   }
 }
 .jumbotron-file-blue {
-  padding-top: 10px;
+  padding-top: 0;
   padding-bottom: 10px;
   margin-bottom: 10px;
   color: white;
@@ -5110,6 +5110,8 @@ a.badge:focus {
   font-size: 15px;
   font-weight: 200;
   color: white;
+  word-wrap: break-word;
+  vertical-align: baseline;
 }
 .jumbotron-file-blue a {
   color: white;
@@ -5121,10 +5123,6 @@ a.badge:focus {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .jumbotron-file-blue {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
   .container .jumbotron-file-blue,
   .container-fluid .jumbotron-file-blue {
     padding-left: 20px;
@@ -5132,6 +5130,54 @@ a.badge:focus {
   }
   .jumbotron-file-blue h2,
   .jumbotron-file-blue .h2 {
+    font-size: 20px;
+  }
+}
+.jumbotron-file-gray {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #424244;
+  background-color: #f1f1f1;
+  min-height: 158px;
+}
+.jumbotron-file-gray:hover {
+  transition-delay: 2s;
+  background-color: #a3a2a8;
+}
+.jumbotron-file-gray h2,
+.jumbotron-file-gray .h2 {
+  color: #424244;
+  margin: 0;
+}
+.jumbotron-file-gray a > img {
+  text-align: left !important;
+  vertical-align: baseline;
+}
+.jumbotron-file-gray p {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 200;
+  color: #424244;
+  word-wrap: break-word;
+}
+.jumbotron-file-gray a {
+  color: #424244;
+}
+.jumbotron-file-gray a:hover {
+  text-decoration: none;
+}
+.jumbotron-file-gray .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .container .jumbotron-file-gray,
+  .container-fluid .jumbotron-file-gray {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .jumbotron-file-gray h2,
+  .jumbotron-file-gray .h2 {
     font-size: 20px;
   }
 }
