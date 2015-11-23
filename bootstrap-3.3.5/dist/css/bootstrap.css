@@ -7359,6 +7359,9 @@ h2.topic-text {
 .nav-list > .active {
   color: #5b595e;
 }
+.site-action {
+  padding-right: 30px;
+}
 .site-action .nav li > a {
   color: #a3a2a8;
   font-size: 15px !important;
@@ -7390,7 +7393,7 @@ ol.breadcrumb {
   margin-bottom: 0px !important;
 }
 .navbar-form {
-  padding-right: 0;
+  padding-right: 15px;
 }
 .logos,
 .topic {
