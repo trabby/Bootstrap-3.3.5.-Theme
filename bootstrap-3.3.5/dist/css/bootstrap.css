@@ -7242,6 +7242,9 @@ fieldset[disabled] .btn-full.active {
   margin-right: 20px;
   vertical-align: sub;
 }
+.header-green {
+  background: #74a80a;
+}
 .bg-primary {
   background: #f4f5f7;
   float: left;
@@ -7335,6 +7338,11 @@ h2.topic-text {
 .header-caption {
   color: white;
   margin-left: 0;
+  text-transform: uppercase;
+}
+.header-description {
+  color: white;
+  font-size: 20px;
 }
 .nav-list {
   padding: 2px 15px;
