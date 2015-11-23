@@ -7278,6 +7278,13 @@ fieldset[disabled] .btn-full.active {
 .bg-blue-darker a {
   color: #74a80a;
 }
+.bg-green {
+  background: #74a80a;
+}
+.bg-green h2,
+.bg-green p {
+  color: white;
+}
 body {
   min-height: 2000px;
   padding-top: 80px;
@@ -7431,6 +7438,13 @@ ol.breadcrumb {
   position: absolute;
   padding-left: 10px;
 }
+.hover-text {
+  color: white !important;
+  z-index: 555;
+  bottom: 10px;
+  position: absolute;
+  padding: 10px;
+}
 .pdf-thumb-box {
   display: inline-block !important;
   position: relative !important;
@@ -7451,11 +7465,15 @@ ol.breadcrumb {
   transition-delay: 0s;
   text-align: center;
   position: absolute;
-  background-color: rgba(230, 232, 227, 0.58);
+  background: rgba(49, 59, 75, 0.75);
   color: #fff;
   width: 100%;
   height: 100%;
-  text-shadow: 0 1px 2px rgba(230, 232, 227, 0.6);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .pdf-thumb-box-overlay span {
   margin: auto;
