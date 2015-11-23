@@ -1119,7 +1119,7 @@ img {
   border-radius: 6px;
 }
 .img-thumbnail {
-  padding: 4px;
+  padding: 0px;
   line-height: 1.42857143;
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -1282,6 +1282,10 @@ p {
 }
 .page-header p > a {
   color: #74a80a;
+}
+a.internal-link {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .lead {
   margin-bottom: 22px;
@@ -5183,7 +5187,7 @@ a.badge:focus {
 }
 .thumbnail {
   display: block;
-  padding: 4px;
+  padding: 0px;
   margin-bottom: 22px;
   line-height: 1.42857143;
   background-color: #ffffff;
@@ -6102,8 +6106,8 @@ button.close {
   filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .modal-header {
   padding: 15px;
@@ -7575,5 +7579,8 @@ ul.nav-tabs li.active:after {
 .embed-responsive-item,
 .img-object {
   padding-right: 20px;
+}
+.modal-content {
+  border-radius: 0;
 }
 /*# sourceMappingURL=bootstrap.css.map */
