@@ -1418,7 +1418,7 @@ a.bg-danger:focus {
 }
 .page-header h1 {
   margin-left: 0;
-  margin-top: 0;
+  margin-top: 26px;
 }
 ul,
 ol {
@@ -5013,8 +5013,8 @@ a.badge:focus {
   transition-delay: 0s;
   background-color: #313b4b;
 }
-.jumbotron h1,
-.jumbotron .h1 {
+.jumbotron h3,
+.jumbotron .h3 {
   color: white;
   margin: 0;
 }
@@ -5043,8 +5043,8 @@ a.badge:focus {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .jumbotron h1,
-  .jumbotron .h1 {
+  .jumbotron h3,
+  .jumbotron .h3 {
     font-size: 61px;
   }
 }
@@ -5060,10 +5060,11 @@ a.badge:focus {
   transition-delay: 0s;
   background-color: #7cbd00;
 }
-.jumbotron-file h2,
-.jumbotron-file .h2 {
+.jumbotron-file h3,
+.jumbotron-file .h3 {
   color: white;
   margin: 0;
+  padding: 15px 0;
 }
 .jumbotron-file p {
   margin-bottom: 5px;
@@ -5087,9 +5088,9 @@ a.badge:focus {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .jumbotron-file h2,
-  .jumbotron-file .h2 {
-    font-size: 20px;
+  .jumbotron-file h3,
+  .jumbotron-file .h3 {
+    font-size: 16px;
   }
 }
 .jumbotron-file-blue {
@@ -5104,10 +5105,11 @@ a.badge:focus {
   transition-delay: 0s;
   background-color: #313b4b;
 }
-.jumbotron-file-blue h2,
-.jumbotron-file-blue .h2 {
+.jumbotron-file-blue h3,
+.jumbotron-file-blue .h3 {
   color: white;
   margin: 0;
+  padding: 15px 0;
 }
 .jumbotron-file-blue p {
   margin-bottom: 5px;
@@ -5132,9 +5134,9 @@ a.badge:focus {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .jumbotron-file-blue h2,
-  .jumbotron-file-blue .h2 {
-    font-size: 20px;
+  .jumbotron-file-blue h3,
+  .jumbotron-file-blue .h3 {
+    font-size: 16px;
   }
 }
 .jumbotron-file-gray {
@@ -5149,8 +5151,8 @@ a.badge:focus {
   transition-delay: 2s;
   background-color: #a3a2a8;
 }
-.jumbotron-file-gray h2,
-.jumbotron-file-gray .h2 {
+.jumbotron-file-gray h3,
+.jumbotron-file-gray .h3 {
   color: #424244;
   margin: 0;
 }
@@ -5180,9 +5182,9 @@ a.badge:focus {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .jumbotron-file-gray h2,
-  .jumbotron-file-gray .h2 {
-    font-size: 20px;
+  .jumbotron-file-gray h3,
+  .jumbotron-file-gray .h3 {
+    font-size: 16px;
   }
 }
 .thumbnail {
@@ -7329,6 +7331,7 @@ fieldset[disabled] .btn-full.active {
   background: #f4f5f7;
   float: left;
   padding-bottom: 12px;
+  margin-bottom: 30px;
 }
 .bg-primary-float {
   background: #f4f5f7;
@@ -7380,7 +7383,7 @@ p {
   letter-spacing: 1px;
 }
 h1 {
-  margin-left: 40px;
+  margin-left: 15px;
 }
 .font-14 {
   font-size: 15px;
@@ -7688,6 +7691,9 @@ ul.nav-tabs li.active:after {
   border-width: 8px;
   margin-top: -8px;
 }
+.slide {
+  margin-bottom: 12px;
+}
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-next,
@@ -7700,5 +7706,16 @@ ul.nav-tabs li.active:after {
 }
 .modal-content {
   border-radius: 0;
+}
+.card-view .col-md-4 {
+  padding: 0;
+  margin-right: 30px;
+}
+.card-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.card-title img {
+  padding: 20px 0;
 }
 /*# sourceMappingURL=bootstrap.css.map */
