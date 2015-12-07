@@ -39,6 +39,12 @@
     transition-delay:0s;
     background-color: @blue-darker;
   }
+  h1,
+  .h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:60px;
+    margin-top:0;
+  }
   h3,
   .h3 {
     color: @jumbotron-heading-color;
@@ -47,9 +53,12 @@
 
   p {
     margin-bottom: (@jumbotron-padding / 2);
-    font-size: @jumbotron-font-size;
-    font-weight: 200;
+    font-size: 14px;
     color: @jumbotron-color;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:normal;
+    text-transform:uppercase;
+    span.jumbotron-place {text-transform:none;}
   }
   a {color: @jumbotron-color;
     &:hover {
