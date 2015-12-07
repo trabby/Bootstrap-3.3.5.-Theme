@@ -1284,9 +1284,6 @@ h6,
 p {
   margin: 0 0 11px;
 }
-.page-header p > a {
-  color: #74a80a;
-}
 a.internal-link {
   text-decoration: underline;
   cursor: pointer;
@@ -1415,14 +1412,6 @@ a.bg-warning:focus {
 a.bg-danger:hover,
 a.bg-danger:focus {
   background-color: #e4b9b9;
-}
-.page-header {
-  padding-bottom: 10px;
-  margin: 0;
-}
-.page-header h1 {
-  margin-left: 0;
-  margin-top: 26px;
 }
 ul,
 ol {
@@ -7418,7 +7407,7 @@ h2.topic-text {
 .margin-before {
   margin-top: 26px;
 }
-.css-default {
+.csc-default {
   margin-top: 15px;
 }
 .margin-after {
@@ -7551,7 +7540,7 @@ ol.breadcrumb {
   display: inline-block !important;
   position: relative !important;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .pdf-thumb-box-overlay {
   visibility: hidden;
